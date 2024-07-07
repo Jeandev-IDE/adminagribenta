@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>AgriBenta</title>
+</head>
+<body>
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/logo.png" alt="">
+            </div>
+            <span class="logo_name">AgriBenta</span>
+        </div>
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="uil uil-user"></i>
+                    <span class="link-name">My Account</span>
+                </a></li>
+                <li><a href="User Management.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">User Management</span>
+                </a></li>
+                <li><a href="Backup.html">
+                    <i class="uil uil-database"></i>
+                    <span class="link-name">Backups</span>
+                </a></li>
+                <li><a href="Media.html">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">Media Management</span>
+                </a></li>
+                <li><a href="Access.html">
+                    <i class="uil uil-lock-access"></i>
+                    <span class="link-name">Access Management</span>
+                </a></li>
+                <li><a href="Mainte.html">
+                    <i class="uil uil-wrench"></i>
+                    <span class="link-name">Maintenance Mode</span>
+                </a></li>
+                <li><a href="Vendor.html">
+                    <i class="uil uil-briefcase"></i>
+                    <span class="link-name">Vendor Management</span>
+                </a></li>
+                <li><a href="Customer.html">
+                    <i class="uil uil-users-alt"></i>
+                    <span class="link-name">Customer Management</span>
+                </a></li>
+                <li><a href="Product.html">
+                    <i class="uil uil-box"></i>
+                    <span class="link-name">Product Management</span>
+                </a></li>
+                <li><a href="Ana.html">
+                    <i class="uil uil-chart-bar"></i>
+                    <span class="link-name">Analytics</span>
+                </a></li>
+                <li><a href="Coup.html">
+                    <i class="uil uil-gift"></i>
+                    <span class="link-name">Coupon Management</span>
+                </a></li>
+                <li><a href="Post.html">
+                    <i class="uil uil-comment-dots"></i>
+                    <span class="link-name">Post Management</span>
+                </a></li>
+                <li><a href="event.html">
+                    <i class="uil uil-ticket"></i>
+                    <span class="link-name">Event Management</span>
+                </a></li>
+                <li><a href="Form.html">
+                    <i class="uil uil-file-alt"></i>
+                    <span class="link-name">Form Management</span>
+                </a></li>
+                <li><a href="recipe.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Recipe Management</span>
+                </a></li>
+            </ul>
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="dashboard">
+        <div class="backup-container">
+            <div class="header">
+                <button class="generate-btn" id="generateBackupBtn">Generate Backup</button>
+                <div class="rename-backup">
+                    <input type="checkbox" id="rename-checkbox">
+                    <label for="rename-checkbox">Rename the backup (optional):</label>
+                    <input type="text" id="backup-name" placeholder="BACKUP NAME">
+                </div>
+                <button class="delete-btn">Delete Selected Backup</button>
+            </div>
+            <table class="backup-table">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Type</th>
+                        <th>Backup Code</th>
+                        <th>Comment</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Jun-24-2024 09:40</td>
+                        <td>manual</td>
+                        <td>wp6553e9</td>
+                        <td>TOPHER 5:39PM</td>
+                        <td>
+                            <button class="action-btn">Restore</button> |
+                            <button class="action-btn delete">Delete</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jun-24-2024 20:47</td>
+                        <td>manual</td>
+                        <td>wpa82b54</td>
+                        <td>TOPHER 4:47AM</td>
+                        <td>
+                            <button class="action-btn">Restore</button> |
+                            <button class="action-btn delete">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+    </section>
+
+ 
+
+    <script src="script.js"></script>
+</body>
+</html>

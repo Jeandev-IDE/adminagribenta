@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <title>AgriBenta</title>
+    <script>
+        window.history.pushState({}, 'Profile', '/wp-admin/profile.php');
+    </script>
+</head>
+<body>
+    <div id="popup" class="popup">
+        <p>Success! Your data has been saved.</p>
+        <button id="closePopup">Close</button>
+    </div>
+    
+    <nav>
+        <div class="logo-name">
+            <div class="logo-image">
+                <img src="images/logo.png" alt="">
+            </div>
+            <span class="logo_name">AgriBenta</span>
+        </div>
+        <div class="menu-items">
+            <ul class="nav-links">
+                <li><a href="index.html">
+                    <i class="uil uil-user"></i>
+                    <span class="link-name">My Account</span>
+                </a></li>
+                <li><a href="User Management.html">
+                    <i class="uil uil-files-landscapes"></i>
+                    <span class="link-name">User Management</span>
+                </a></li>
+                <li><a href="Backup.html">
+                    <i class="uil uil-database"></i>
+                    <span class="link-name">Backups</span>
+                </a></li>
+                <li><a href="Media.html">
+                    <i class="uil uil-thumbs-up"></i>
+                    <span class="link-name">Media Management</span>
+                </a></li>
+                <li><a href="Access.html">
+                    <i class="uil uil-lock-access"></i>
+                    <span class="link-name">Access Management</span>
+                </a></li>
+                <li><a href="Mainte.html">
+                    <i class="uil uil-wrench"></i>
+                    <span class="link-name">Maintenance Mode</span>
+                </a></li>
+                <li><a href="Vendor.html">
+                    <i class="uil uil-briefcase"></i>
+                    <span class="link-name">Vendor Management</span>
+                </a></li>
+                <li><a href="Customer.html">
+                    <i class="uil uil-users-alt"></i>
+                    <span class="link-name">Customer Management</span>
+                </a></li>
+                <li><a href="Product.html">
+                    <i class="uil uil-box"></i>
+                    <span class="link-name">Product Management</span>
+                </a></li>
+                <li><a href="Ana.html">
+                    <i class="uil uil-chart-bar"></i>
+                    <span class="link-name">Analytics</span>
+                </a></li>
+                <li><a href="Coup.html">
+                    <i class="uil uil-gift"></i>
+                    <span class="link-name">Coupon Management</span>
+                </a></li>
+                <li><a href="Post.html">
+                    <i class="uil uil-comment-dots"></i>
+                    <span class="link-name">Post Management</span>
+                </a></li>
+                <li><a href="event.html">
+                    <i class="uil uil-ticket"></i>
+                    <span class="link-name">Event Management</span>
+                </a></li>
+                <li><a href="Form.html">
+                    <i class="uil uil-file-alt"></i>
+                    <span class="link-name">Form Management</span>
+                </a></li>
+                <li><a href="recipe.html">
+                    <i class="uil uil-estate"></i>
+                    <span class="link-name">Recipe Management</span>
+                </a></li>
+            </ul>
+            <ul class="logout-mode">
+                <li><a href="#">
+                    <i class="uil uil-signout"></i>
+                    <span class="link-name">Logout</span>
+                </a></li>
+                <li class="mode">
+                    <a href="#">
+                        <i class="uil uil-moon"></i>
+                    <span class="link-name">Dark Mode</span>
+                </a>
+                <div class="mode-toggle">
+                  <span class="switch"></span>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="dashboard">
+        <div class="top">
+            <i class="uil uil-bars sidebar-toggle"></i>
+        </div>
+        <div class="dash-content">
+            <div class="profile-section">
+                <h2>Profile</h2>
+                <div class="profile-content">
+                    <div class="language-section">
+                        <h3>Language</h3>
+                        <select>
+                            <option value="en">English</option>
+                            <option value="es">Spanish</option>
+                            <!-- Add other languages here -->
+                        </select>
+                    </div>
+                    <div class="status-section">
+                        <h3>Account Status</h3>
+                        <select>
+                            <option value="active">Active</option>
+                            <option value="pending">Verification Pending</option>
+                        </select>
+                    </div>
+                    <div class="name-section">
+                        <h3>Name</h3>
+                        <form>
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username">
+                            <label for="first-name">First Name</label>
+                            <input type="text" id="first-name" name="first-name">
+                            <label for="last-name">Last Name</label>
+                            <input type="text" id="last-name" name="last-name">
+                            <label for="nickname">Nick Name</label>
+                            <input type="text" id="nickname" name="nickname">
+                            <label for="display-name">Display Name</label>
+                            <input type="text" id="display-name" name="display-name">
+                        </form>
+                    </div>
+                    <div class="contact-info-section">
+                        <h3>Contact Info</h3>
+                        <form>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                        </form>
+                    </div>
+                    <div class="account-management-section">
+                        <h3>Account Management</h3>
+                        <form>
+                            <label for="new-password">New Password</label>
+                            <input type="password" id="new-password" name="new-password">
+                            <button type="button" class="btn-new-password">Set New Password</button>
+                            <h3>Sessions</h3>
+                            <button type="button" class="btn-log-out">Log Out Everywhere Else</button>
+                        </form>
+                    </div>
+                    
+                    
+                    <div class="billing-address-section">
+                        <h3>Customer Billing Address</h3>
+                        <form>
+                            <label for="billing-first-name">First Name</label>
+                            <input type="text" id="billing-first-name" name="billing-first-name">
+                            <label for="billing-last-name">Last Name</label>
+                            <input type="text" id="billing-last-name" name="billing-last-name">
+                            <label for="billing-company">Company</label>
+                            <input type="text" id="billing-company" name="billing-company">
+                            <label for="billing-address">Address</label>
+                            <input type="text" id="billing-address" name="billing-address">
+                            <label for="billing-city">City</label>
+                            <input type="text" id="billing-city" name="billing-city">
+                            <label for="billing-zip">Zip Code</label>
+                            <input type="text" id="billing-zip" name="billing-zip">
+                            <label for="billing-country">Country</label>
+                            <input type="text" id="billing-country" name="billing-country">
+                            <label for="billing-phone">Phone</label>
+                            <input type="text" id="billing-phone" name="billing-phone">
+                        </form>
+                    </div>
+                    <div class="shipping-address-section">
+                        <h3>Customer Shipping Address</h3>
+                        
+                        <form>
+                            <label for="shipping-first-name">First Name</label>
+                            <input type="text" id="shipping-first-name" name="shipping-first-name">
+                            <label for="shipping-last-name">Last Name</label>
+                            <input type="text" id="shipping-last-name" name="shipping-last-name">
+                            <label for="shipping-company">Company</label>
+                            <input type="text" id="shipping-company" name="shipping-company">
+                            <label for="shipping-address">Address</label>
+                            <input type="text" id="shipping-address" name="shipping-address">
+                            <label for="shipping-city">City</label>
+                            <input type="text" id="shipping-city" name="shipping-city">
+                            <label for="shipping-zip">Zip Code</label>
+                            <input type="text" id="shipping-zip" name="shipping-zip">
+                            <label for="shipping-state">State</label>
+                            <input type="text" id="shipping-state" name="shipping-state">
+                        </form>
+                    </div>
+                    <div class="roles-section">
+                        <h3>Roles</h3>
+                        <form>
+                            <label for="user-roles">User Roles</label>
+                            <select id="user-roles" name="user-roles">
+                                <option value="content-moderator">Content Moderator</option>
+                                <option value="customer">Customer</option>
+                                <option value="administrator">Administrator</option>
+                                <option value="vendor">Vendor</option>
+                                <option value="shop-manager">Shop Manager</option>
+                            </select>
+                        </form>
+                        <button type="button" class="btn-new-password">Update Profile</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
